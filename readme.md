@@ -5,3 +5,4 @@ Miscellaneous snippets and notes.
 
 # Table of Contents
 - [`snippets`](https://jcmariscal.github.io/misc-notes/snippets) - misc snippets
+- [`awesome lists`](https://jcmariscal.github.io/misc-notes/awesome-lists) - misc snippets
