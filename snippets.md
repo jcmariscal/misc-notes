@@ -4,7 +4,7 @@
 <p><img src="https://jcmariscal.github.io/misc-notes/images/m4s-mpd.png"/></p>
 - Copy link and use the following command: `youtube-dl {mpd-link}`
 - Other method is to wget all m4s files and join the files.
-- Also it is possible to use a script modified from [here](https://gist.github.com/alexeygrigorev/a1bc540925054b71e1a7268e50ad55cd)
+- Another method is to use an script, modified from [here](https://gist.github.com/alexeygrigorev/a1bc540925054b71e1a7268e50ad55cd)
 
 ```python
 import requests
