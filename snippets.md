@@ -1,3 +1,5 @@
+Return to table of contents [`toc`](https://jcmariscal.github.io/misc-notes/)
+
 # Download segmented audio/video (M4S, eg. vimeo, news-websites, etc.)
 
 - Load webpage and find the mpd link.
