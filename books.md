@@ -2,4 +2,4 @@
 
 ## Mathematics
 
-- [ ]Ordinary Differential Equations - V.I. Arnold (#todo)
+- [ ] Ordinary Differential Equations - V.I. Arnold (#todo)
