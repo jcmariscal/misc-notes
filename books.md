@@ -4,8 +4,8 @@ Return to table of contents [`toc`](https://jcmariscal.github.io/misc-notes/)
 
 ## Mathematics
 
-- [ ] Ordinary Differential Equations - V.I. Arnold [#todo]
+- [ ] Ordinary Differential Equations - V.I. Arnold [#toread]
 
 # Physics
 
-- [ ] Basic laws of electromagnetism - Irodov [#todo]
+- [ ] Basic laws of electromagnetism - Irodov [#toread]
