@@ -1,5 +1,13 @@
 Return to table of contents [`toc`](https://jcmariscal.github.io/misc-notes/)
 
+# wget
+
+- Mirror page without parent-directory
+```bash
+$ wget --recursive --level=inf --no-parent --random-wait --no-cache --convert-links --adjust-extension --page-requisites --no-host-directories -e robots=off --user-agent=mozilla http://foo.org/foo/foo
+```
+
+
 # Download segmented audio/video (M4S, eg. vimeo, news-websites, etc.)
 
 - Load webpage and find the mpd link.
