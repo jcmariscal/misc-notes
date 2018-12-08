@@ -7,6 +7,16 @@ Return to table of contents [`toc`](https://jcmariscal.github.io/misc-notes/)
 $ wget --recursive --level=inf --no-parent --random-wait --no-cache --convert-links --adjust-extension --page-requisites --no-host-directories -e robots=off --user-agent=mozilla http://foo.org/foo/foo
 ```
 
+# convert djvu to pdf
+
+Use [djvu2pdf](http://0x2a.at/s/projects/djvu2pdf) tool or simply:
+
+```bash
+sudo apt-get install djvulibre-bin ghostscript
+
+ddjvu -format=pdf -quality=85 -verbose foo.djvu foo-output.pdf
+``
+
 
 # Download segmented audio/video (M4S, eg. vimeo, news-websites, etc.)
 
