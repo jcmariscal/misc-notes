@@ -21,7 +21,7 @@ Use [djvu2pdf](http://0x2a.at/s/projects/djvu2pdf) tool or simply:
 sudo apt-get install djvulibre-bin ghostscript
 
 ddjvu -format=pdf -quality=85 -verbose foo.djvu foo-output.pdf
-``
+```
 
 
 # Download segmented audio/video (M4S, eg. vimeo, news-websites, etc.)
