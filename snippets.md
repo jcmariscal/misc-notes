@@ -7,14 +7,22 @@ Return to table of contents [`toc`](https://jcmariscal.github.io/misc-notes/)
 ```bash
 xfce4-terminal --drop-down
 ```
+Emacs could also be launched directly in terminal mode with the following:
+
+```bash
+xfce4-terminal --drop-down --tab  --title=emacs -e "emacs -nw"
+```
 
 I assigned `f12` to launch the terminal. It is very handy.
-![keyboard settings](./images/xfce-keyboard-settings-xfce-terminal.png)
-# wget
 
-- Mirror page without parent-directory
+![keyboard settings](./images/xfce-keyboard-settings-xfce-terminal.png)
+
+# Bizanz: GIF full screen capture
+
+Bizanz provides a nice command line interface for recording GIFs.
+
 ```bash
-$ wget --recursive --level=inf --no-parent --random-wait --no-cache --convert-links --adjust-extension --page-requisites --no-host-directories -e robots=off --user-agent=mozilla http://foo.org/foo/foo
+byzanz-record --duration=30 --delay=2 --cursor -w 1366 -h 768 foo.gif
 ```
 
 # pandoc
