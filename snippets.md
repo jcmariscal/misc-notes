@@ -1,47 +1,11 @@
 Return to table of contents [`toc`](https://jcmariscal.github.io/misc-notes/)
 
-# XFCE top-down terminal configuration
-
-- Keyboard settings, add the following shortcut:
-
-```bash
-xfce4-terminal --drop-down
-```
-Emacs could also be launched directly in terminal mode with the following:
-
-```bash
-xfce4-terminal --drop-down --tab  --title=emacs -e "emacs -nw"
-```
-
-I assigned `f12` to launch the terminal. It is very handy.
-
-![keyboard settings](./images/xfce-keyboard-settings-xfce-terminal.png)
-
 # Bizanz: GIF full screen capture
 
 Bizanz provides a nice command line interface for recording GIFs.
 
 ```bash
 byzanz-record --duration=30 --delay=2 --cursor -w 1366 -h 768 foo.gif
-```
-
-# pandoc
-
-- convert from org-mode file to github flavoured markdown
-```bash
-$ pandoc --to=gfm foo.org -o foo.md
-```
-
-# terminator
-
-Some interesting config files can be found here:
-- [Top-down terminator](https://bytefreaks.net/howtos/howto-make-terminator-terminal-act-like-guake-terminal-in-ubuntu-11-10)
-- [Terminator config](https://unix.stackexchange.com/questions/168436/how-to-open-terminal-split-to-9-terminals-and-switch-between-them-using-one-scr)
-
-# download youtube playlist
-
-```bash
-youtube-dl --write-description --write-info-json --write-annotations  --write-sub --write-thumbnail  --write-annotations --write-info-json --yes-playlist --verbose {playlist-link}
 ```
 
 # convert djvu to pdf
@@ -54,6 +18,11 @@ sudo apt-get install djvulibre-bin ghostscript
 ddjvu -format=pdf -quality=85 -verbose foo.djvu foo-output.pdf
 ```
 
+# download a youtube playlist
+
+```bash
+youtube-dl --write-description --write-info-json --write-annotations  --write-sub --write-thumbnail  --write-annotations --write-info-json --yes-playlist --verbose {playlist-link}
+```
 
 # Download segmented audio/video (M4S, eg. vimeo, news-websites, etc.)
 
@@ -103,3 +72,36 @@ for segment in tqdm(video['segments']):
 video_file.flush()
 video_file.close()
 ```
+# google sheets
+
+- Insert static date in cell: `Ctr ;`
+- insert static time in cell: `Ctrl shift ;` 
+# pandoc
+
+- convert from org-mode file to github flavoured markdown
+```bash
+$ pandoc --to=gfm foo.org -o foo.md
+```
+
+# terminator
+
+Some interesting config files can be found here:
+- [Top-down terminator](https://bytefreaks.net/howtos/howto-make-terminator-terminal-act-like-guake-terminal-in-ubuntu-11-10)
+- [Terminator split configuration](https://unix.stackexchange.com/questions/168436/how-to-open-terminal-split-to-9-terminals-and-switch-between-them-using-one-scr)
+
+# XFCE top-down terminal configuration
+
+- Keyboard settings, add the following shortcut:
+
+```bash
+xfce4-terminal --drop-down
+```
+Emacs could also be launched directly in terminal mode with the following:
+
+```bash
+xfce4-terminal --drop-down --tab  --title=emacs -e "emacs -nw"
+```
+
+I assigned `f12` to launch the terminal. It is very handy.
+
+![keyboard settings](./images/xfce-keyboard-settings-xfce-terminal.png)
