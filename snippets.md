@@ -76,6 +76,7 @@ video_file.close()
 
 - Insert static date in cell: `Ctr ;`
 - insert static time in cell: `Ctrl shift ;` 
+
 # pandoc
 
 - convert from org-mode file to github flavoured markdown
@@ -88,6 +89,13 @@ $ pandoc --to=gfm foo.org -o foo.md
 Some interesting config files can be found here:
 - [Top-down terminator](https://bytefreaks.net/howtos/howto-make-terminator-terminal-act-like-guake-terminal-in-ubuntu-11-10)
 - [Terminator split configuration](https://unix.stackexchange.com/questions/168436/how-to-open-terminal-split-to-9-terminals-and-switch-between-them-using-one-scr)
+
+# wget
+
+- copy website recursively without parent directory:
+```bash
+wget --recursive --level=inf --no-parent --random-wait --no-cache --convert-links --adjust-extension --page-requisites -e robots=off --user-agent=mozilla www.foo.org/data/ 
+```
 
 # XFCE top-down terminal configuration
 
