@@ -77,6 +77,13 @@ video_file.close()
 - Insert static date in cell: `Ctr ;`
 - insert static time in cell: `Ctrl shift ;` 
 
+# mpv
+
+- Play youtube in ascii in the terminal use:
+```bash
+$ DISPLAY= mpv --quiet -vo caca 'https://www.youtube.com/watch?v=3hoThry5WsY'
+```
+
 # pandoc
 
 - convert from org-mode file to github flavoured markdown
