@@ -74,8 +74,18 @@ video_file.close()
 ```
 # google sheets
 
+- google sheets function list: https://support.google.com/docs/table/25273?hl=en&ref_topic=3105625
 - Insert static date in cell: `Ctr ;`
-- insert static time in cell: `Ctrl shift ;` 
+- insert static time in cell: `Ctrl shift ;`
+- Regular expression syntax reference: https://github.com/google/re2/blob/master/doc/syntax.txt
+  - useful cell formulas: `REGEXTRACT`, `REGEXMATCH`, `REGEXREPLACE`, `SUBSTITUTE`,`REPLACE`
+
+# grep
+
+- grep for command argument:
+```bash
+$ ls --help | egrep -- -a
+```
 
 # mpv
 
@@ -101,7 +111,7 @@ Some interesting config files can be found here:
 
 - copy website recursively without parent directory:
 ```bash
-wget --recursive --level=inf --no-parent --random-wait --no-cache --convert-links --adjust-extension --page-requisites -e robots=off --user-agent=mozilla www.foo.org/data/ 
+wget --recursive --level=inf --no-parent --random-wait --no-cache --convert-links --adjust-extension --page-requisites -e robots=off --user-agent=mozilla www.foo.org/data/
 ```
 
 # XFCE top-down terminal configuration
