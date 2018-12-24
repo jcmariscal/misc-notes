@@ -72,6 +72,14 @@ for segment in tqdm(video['segments']):
 video_file.flush()
 video_file.close()
 ```
+# ffmpeg
+
+- join mp3 files: (for more on concatenation see [here](https://trac.ffmpeg.org/wiki/Concatenate)
+
+```bash
+$ printf "file '%s'\n" ./*.mp3 >> inputs.txt
+$ ffmpeg -f concat -safe 0 -i <(printf "file '%s'\n" ./*.mp3) -c copy output.mp3
+```
 # google sheets
 
 - google sheets function list: https://support.google.com/docs/table/25273?hl=en&ref_topic=3105625
