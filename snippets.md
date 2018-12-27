@@ -74,10 +74,14 @@ video_file.close()
 ```
 # ffmpeg
 
-- join mp3 files: (for more on concatenation see [here](https://trac.ffmpeg.org/wiki/Concatenate)
+- shuffle, and join mp3 files: (for more on concatenation see [here](https://trac.ffmpeg.org/wiki/Concatenate)
 
 ```bash
-$ printf "file '%s'\n" ./*.mp3 >> inputs.txt
+$ printf "file '%s'\n" ./*.mp3 >> input.txt
+$ shuf -o input2.txt input.txt
+$ ffmpeg -f concat -safe 0 -i input2.txt -c copy output.mp3
+
+# or just join in 1 liner
 $ ffmpeg -f concat -safe 0 -i <(printf "file '%s'\n" ./*.mp3) -c copy output.mp3
 ```
 # google sheets
