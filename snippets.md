@@ -105,12 +105,26 @@ $ ls --help | egrep -- -a
 ```bash
 $ DISPLAY= mpv --quiet -vo caca 'https://www.youtube.com/watch?v=3hoThry5WsY'
 ```
+- list of keyboard shortcuts:
+https://github.com/mpv-player/mpv/blob/master/etc/input.conf 
 
 # pandoc
 
 - convert from org-mode file to github flavoured markdown
 ```bash
 $ pandoc --to=gfm foo.org -o foo.md
+```
+# restic
+
+- initiate repository
+
+```bash
+$ restic init --repo /foo/repo-location
+```
+- backup home folder
+
+```bash
+$ restic -r /foo/repo-location --verbose backup /home/
 ```
 
 # terminator
