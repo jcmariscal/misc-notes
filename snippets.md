@@ -8,6 +8,24 @@ Bizanz provides a nice command line interface for recording GIFs.
 byzanz-record --duration=30 --delay=2 --cursor -w 1366 -h 768 foo.gif
 ```
 
+# Borg
+Initialize a borg repository:
+```bash
+$ borg init --encryption=repokey /path/to/repo
+```
+
+Create backup of home folder `~/` excluding caches:
+
+```bash
+$ borg create --verbose --progress --stats --compression none --exclude-caches /path/to/repo::name-of-backup ~/
+```
+
+Mount and unmount backup using FUSE:
+```bash
+$ borg mount /path/to/repo::name-of-repo /mnt/foo/
+$ borg umount /mnt/foo/
+```
+
 # convert djvu to pdf
 
 Use [djvu2pdf](http://0x2a.at/s/projects/djvu2pdf) tool or simply:
@@ -72,6 +90,7 @@ for segment in tqdm(video['segments']):
 video_file.flush()
 video_file.close()
 ```
+
 # ffmpeg
 
 - shuffle, and join mp3 files: (for more on concatenation see [here](https://trac.ffmpeg.org/wiki/Concatenate)
@@ -97,6 +116,13 @@ $ ffmpeg -f concat -safe 0 -i <(printf "file '%s'\n" ./*.mp3) -c copy output.mp3
 - grep for command argument:
 ```bash
 $ ls --help | egrep -- -a
+```
+
+# mount
+
+Mount by nfs from NAS:
+```bash
+$ sudo mount -t nfs <ip-address>:/foo/foo /media/foo/foo
 ```
 
 # mpv
